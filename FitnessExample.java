@@ -27,7 +27,7 @@ public class FitnessExample {
     }
 
     private void appendPage(WikiPage wikiPage, StringBuffer buffer, String inheritedPage) {
-        WikiPage suiteTeardown = getInheritedPage(wikiPage, inheritedPage) != null ? getInheritedPage(wikiPage, inheritedPage) : new NullWikiPage();
+        WikiPage inheritedWikiPage = getInheritedPage(wikiPage, inheritedPage) != null ? getInheritedPage(wikiPage, inheritedPage) : new NullWikiPage();
         setPathName(wikiPage, buffer, pagePath, true);
     }
 
